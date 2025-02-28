@@ -8,7 +8,7 @@ function getWeatherReport()
 	var inputData = document.getElementById('inputData').value;
 	getResults (inputData)
 }
-getResults ('Hyderabad, IN');
+getResults ('Chiniot, PAk');
 function getResults (query) {
   fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
     .then(weather => {
